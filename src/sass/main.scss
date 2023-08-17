@@ -1,0 +1,13 @@
+@use 'base' as *;
+@use 'components' as *;
+@use 'layouts' as *;
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html {
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+}
+
