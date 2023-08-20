@@ -191,3 +191,12 @@ const closeInfoModal = () => {
 
 const infoBtn = document.querySelector('.info-btn');
 infoBtn.addEventListener('click', closeInfoModal)
+
+const setCurrentDate = () => {
+	const footerYear = document.querySelector('.year');
+	const date = new Date();
+	const year = date.getFullYear();
+	footerYear.textContent = year;
+
+};
+setCurrentDate();
