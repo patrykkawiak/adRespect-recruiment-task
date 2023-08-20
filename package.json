@@ -11,6 +11,7 @@
 	"dependencies": {
 		"aos": "^3.0.0-beta.6",
 		"autoprefixer": "^10.4.15",
+		"masonry-layout": "^4.2.2",
 		"postcss-cli": "^10.1.0",
 		"sass": "^1.63.4",
 		"vite-plugin-imagemin": "^0.6.1",

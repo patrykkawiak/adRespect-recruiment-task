@@ -14,7 +14,7 @@
 
 .nav-item {
 	animation: closeNavItem 0.3s forwards;
-	@apply scale-0 w-full p-4 border-b-[1px] border-black/25 bg-[#fff] flex justify-center md:scale-100 md:w-max md:border-none md:p-0;
+	@apply scale-0 w-full p-4 border-b-[1px] border-black/25 bg-[#fff] flex justify-center md:scale-100 md:w-max md:border-none md:p-0 md:animate-none;
 	a {
 		@apply p-4 w-max md:p-0;
 	}
@@ -51,8 +51,4 @@
 	}
 }
 
-@media (min-width: 768px) {
-	.nav-item {
-		animation: none;
-	}
-}
+

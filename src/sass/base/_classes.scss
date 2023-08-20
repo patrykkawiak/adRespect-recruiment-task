@@ -1,3 +1,44 @@
 .wrapper {
-	@apply mx-auto my-0 max-w-[1262px];
+  @apply mx-auto my-0 max-w-[1262px];
+}
+
+.paragraph {
+  @apply text-paragraph font-inter font-normal leading-paragraph;
+}
+
+.subheading {
+  @apply text-[1.2rem] font-inter font-normal leading-paragraph tracking-[-0.12px];
+}
+
+.heading {
+  @apply text-[4.8rem] font-medium  leading-heading tracking-[-1.44px];
+
+  &-first-part {
+    @apply font-montserrat;
+  }
+  &-second-part {
+    @apply font-inter italic;
+  }
+}
+
+.loading {
+  @apply flex opacity-100;
+}
+
+.active-loading {
+  animation: closeLoading .3s linear forwards;
+}
+.info-modal {
+  @apply flex;
+}
+
+.info-close {
+  @apply hidden;
+}
+
+@keyframes closeLoading {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }

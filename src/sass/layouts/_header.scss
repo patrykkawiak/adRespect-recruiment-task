@@ -1,0 +1,40 @@
+.slider {
+  &-item {
+    @apply flex flex-col lg:flex-row gap-[6.4rem] w-screen;
+  }
+  &-container {
+    @apply flex flex-col justify-center lg:items-end lg:w-1/2;
+  }
+  &-content {
+    @apply flex flex-col gap-[7.2rem] px-8 pt-8 max-w-[60rem] lg:py-16 2xl:pl-0;
+  }
+  &-text {
+    @apply flex flex-col gap-[4.4rem];
+  }
+  &-heading {
+    @apply text-[4.5rem] leading-[5rem] lg:text-[6rem] lg:leading-[7rem] font-montserrat font-medium;
+  }
+  &-desc {
+    @apply text-black;
+  }
+
+  &-buttons {
+    @apply flex flex-col gap-8 lg:flex-row lg:gap-[3.2rem];
+  }
+
+  &-img-box {
+    @apply h-full relative lg:w-1/2 lg:max-h-[74rem];
+
+    img {
+      @apply w-full h-full max-h-[50rem] object-cover lg:max-h-max;
+    }
+  }
+}
+
+.dot {
+  @apply h-8 w-8 bg-[#fdfdfd43] rounded-custom-full border-green border-2;
+}
+
+.dot-active {
+  @apply bg-green;
+}

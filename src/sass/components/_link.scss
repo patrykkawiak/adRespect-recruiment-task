@@ -1,0 +1,87 @@
+.link {
+  @apply px-[2.4rem] py-[1.2rem] w-max rounded-custom-200 text-paragraph cursor-pointer border-[1px] z-10 relative overflow-hidden transition-[color] font-inter;
+
+  &::before {
+    @apply content-[''] absolute h-full w-full bottom-0 left-0 z-[-1];
+  }
+}
+
+.primary {
+  @apply text-gray duration-300 border-green;
+
+  &::before {
+    @apply transition-[bottom] duration-300 bg-green;
+  }
+
+  &:hover::before {
+    @apply bottom-[-100%];
+  }
+
+  &:hover {
+    @apply text-green;
+  }
+}
+.primary-gray {
+  @apply text-green duration-300 border-gray;
+
+  &::before {
+    @apply transition-[bottom] duration-300 bg-gray;
+  }
+
+  &:hover::before {
+    @apply bottom-[-100%];
+  }
+
+  &:hover {
+    @apply text-gray;
+  }
+}
+
+.secondary {
+  @apply text-green duration-500 border-green;
+
+  &::before {
+    @apply transition-[clip-path] duration-500 bg-green;
+    clip-path: circle(00% at 50% 50%);
+  }
+
+  &:hover::before {
+    clip-path: circle(80% at 50% 50%);
+  }
+
+  &:hover {
+    @apply text-gray;
+  }
+}
+.secondary-gray {
+  @apply text-gray duration-500 border-white transition-all;
+
+  &::before {
+    @apply transition-[clip-path] duration-500 bg-beige;
+    clip-path: circle(00% at 50% 50%);
+  }
+
+  &:hover::before {
+    clip-path: circle(80% at 50% 50%);
+  }
+
+  &:hover {
+    @apply text-black border-black;
+  }
+}
+.secondary-black {
+  @apply text-black duration-500 border-black transition-all;
+
+  &::before {
+    @apply transition-[clip-path] duration-500 bg-green;
+    clip-path: circle(00% at 50% 50%);
+  }
+
+  &:hover::before {
+    clip-path: circle(80% at 50% 50%);
+  }
+
+  &:hover {
+    @apply text-gray border-gray;
+  }
+}

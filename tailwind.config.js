@@ -23,7 +23,20 @@ export default {
 		borderRadius: {
 			'custom-28': '28px',
 			'custom-200': '200px',
+			'custom-full': '100%'
 		},
+		extend: {
+			fontSize: {
+				'paragraph': '16px',
+			},	
+			lineHeight: {
+				'paragraph': '150%',
+				'heading': '115%',
+			}
+			
+		},
+
+		
 	},
 	plugins: [],
 };

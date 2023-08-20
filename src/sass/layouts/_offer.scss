@@ -1,0 +1,27 @@
+.card {
+  @apply relative overflow-hidden z-10 flex flex-col gap-24 px-16 py-[4.8rem] w-full h-full rounded-custom-28 bg-white cursor-pointer transition-transform duration-700  sm:w-[37.8rem] sm:h-[37rem] sm:justify-between;
+
+  &:hover {
+    @apply translate-y-[-2rem];
+  }
+
+  &::after {
+    @apply content-[''] absolute h-[100%] w-[100%] bottom-0 left-0 z-[-1] transition-all duration-700;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(41, 121, 9, 0.19511554621848737) 100%
+    );
+    clip-path: circle(0% at 50% 50%);
+  }
+  &:hover::after {
+    clip-path: circle(100% at 50% 50%);
+  }
+
+  &-heading {
+    @apply text-[2.8rem] font-montserrat font-normal leading-heading text-black;
+  }
+  &-btn {
+    @apply flex gap-[1rem] items-center w-max pb-1 text-green text-paragraph border-b-[1px] border-green font-inter leading-paragraph font-normal;
+  }
+}
