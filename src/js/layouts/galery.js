@@ -23,7 +23,6 @@ const galeryModule = () => {
     popUp.classList.remove("close-animation");
     imgIndex = index;
     IsPopUpActive = true;
-    console.log(index);
   };
   images.forEach((el, index) => {
     el.addEventListener("click", (e) => {
@@ -41,7 +40,13 @@ const galeryModule = () => {
   };
 
   const handleImageChange = (index) => {
-    popUpImg.style.backgroundImage = `url("./src/assets/img/projects/project${index}.png")`;
+    if (import.meta.env.MODE == "development") {
+      popUpImg.style.backgroundImage = `url("./src/assets/img/projects/project${index}.png")`;
+    } else {
+      popUpImg.style.backgroundImage = `url('./assets/galeria_${index}.webp')
+      `;
+      popUpImg.style.backgroundImage = `url("./assets/project${index}.png")`;
+    }
   };
 
   const handleNextImg = () => {
@@ -82,4 +87,4 @@ const galeryModule = () => {
   window.addEventListener("click", handleClickOutside);
 };
 
-export default galeryModule
+export default galeryModule;
