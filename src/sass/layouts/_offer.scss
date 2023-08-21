@@ -1,5 +1,5 @@
 .card {
-  @apply relative overflow-hidden z-10 flex flex-col gap-24 px-16 py-[4.8rem] w-full h-full rounded-custom-28 bg-white cursor-pointer transition-transform duration-700  sm:w-[37.8rem] sm:h-[37rem] sm:justify-between;
+  @apply relative overflow-hidden z-10 flex flex-col gap-24 px-16 py-[4.8rem] w-full h-full rounded-custom-28 cursor-pointer bg-white transition-transform duration-700 sm:w-[37.8rem] sm:h-[37rem] sm:justify-between;
 
   &:hover {
     @apply translate-y-[-2rem];

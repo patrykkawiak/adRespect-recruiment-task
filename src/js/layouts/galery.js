@@ -1,6 +1,7 @@
 const galeryModule = () => {
-  const btn = document.querySelector(".gallery-btn");
-  const gallery = document.querySelector(".gallery-ctn");
+  const galleryBtn = document.querySelector(".gallery-btn");
+  const galleryCtn = document.querySelector(".gallery-ctn");
+  const gallery = document.querySelector(".gallery");
   const popUp = document.querySelector(".pop-up");
   const popUpImg = document.querySelector(".pop-up_img");
   const images = document.querySelectorAll(".gallery-item img");
@@ -11,11 +12,22 @@ const galeryModule = () => {
   let imgIndex;
   let IsPopUpActive = false;
 
+  const buttonContent = (content) => {
+   galleryBtn.textContent = content;
+  }
+
   const showAllImg = () => {
-    gallery.classList.toggle("gallery-active");
-    // gallery.style.maxHeight = gallery.scrollHeight + 'px';
+    galleryCtn.classList.toggle("gallery-active");
+    if (galleryCtn.classList.contains('gallery-active')) {
+      galleryCtn.style.maxHeight = gallery.scrollHeight + 'px';
+      buttonContent('Zwiń');
+    } else {
+      galleryCtn.style.maxHeight = '150rem';
+      buttonContent('Rozwiń');
+    }
   };
-  btn.addEventListener("click", showAllImg);
+
+  galleryBtn.addEventListener("click", showAllImg);
 
   const handlePopUp = (e, index) => {
     objectBg = e.target.getAttribute("src");
@@ -44,8 +56,6 @@ const galeryModule = () => {
     if (import.meta.env.MODE == "development") {
       popUpImg.style.backgroundImage = `url("./src/assets/img/projects/project${index}.png")`;
     } else {
-      popUpImg.style.backgroundImage = `url('./assets/galeria_${index}.webp')
-      `;
       popUpImg.style.backgroundImage = `url("./assets/project${index}.png")`;
     }
   };

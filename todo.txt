@@ -1,7 +1,2 @@
-nawigacja
-padding na sekcji poprawic bo sie zjebal --L
-ogarnac pointer na kartach - zrobic cokowliwek aby wygladalo i dzialao
-animacja na otwieranie (scrollHeight czy cos tam) --M
 ogarac reszte html (DRY) --H
-
-i na koniec sosprawdac czy wszystkie fonty sie zgadzaja oraz podlinkowac dobre fonty
+ewentualnie na header zmnienic img na te same px

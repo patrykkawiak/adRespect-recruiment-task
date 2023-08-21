@@ -3,20 +3,20 @@
 }
 
 .gallery-ctn {
-	@apply max-h-[150rem];
+	@apply max-h-[150rem] transition-[max-height] duration-700;
+}
+
+.gallery {
+  @apply h-max
 }
 
 .gallery-ctn::before {
-  @apply content-[''] absolute bottom-0 w-full h-[1000px] z-20;
+  @apply content-[''] absolute bottom-0 w-full h-[1000px] z-20   opacity-100 visible transition-all duration-700;
   background: linear-gradient(360deg, #dcc1ab 0%, rgba(214, 183, 158, 0) 100%);
 }
 
-.gallery-active {
-  @apply max-h-max;
-}
-
 .gallery-active::before {
-  @apply hidden;
+  @apply opacity-0 invisible;
 }
 
 .pop-up {
