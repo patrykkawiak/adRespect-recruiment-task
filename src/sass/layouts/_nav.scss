@@ -28,10 +28,10 @@
 }
 
 .nav-list {
-  display: none;
+  @apply hidden;
 }
 .nav-list.active-list {
-  display: flex;
+  @apply flex;
 }
 
 .nav-list.active-list .nav-item:nth-child(2) {
@@ -57,15 +57,14 @@
 }
 
 .search {
-  transition: 0.4s;
+  @apply transition-all duration-[400];
 }
 .search.search-active {
-  width: 25rem;
+  @apply w-[25rem];
 }
 
 .dropdown {
-  visibility: hidden;
-  opacity: 0;
+  @apply invisible opacity-0;
 }
 
 .dropdown-active {
@@ -74,11 +73,9 @@
 
 @keyframes dropdownShow {
   from {
-    opacity: 0;
-    visibility: hidden;
+    @apply invisible opacity-0;
   }
   to {
-    opacity: 1;
-    visibility: visible;
+    @apply visible opacity-100;
   }
 }

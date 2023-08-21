@@ -7,9 +7,11 @@ import loadingScreenModule from "./layouts/loading";
 import parallaxModule from "./layouts/parallax";
 import sliderModule from "./layouts/slider";
 import galeryModule from "./layouts/galery";
+import masonryModule from "./layouts/masonry";
 
 const loadedModules = () => {
   AOS.init();
+  masonryModule();
   navModule();
   yearModule();
   cookieModalModule();

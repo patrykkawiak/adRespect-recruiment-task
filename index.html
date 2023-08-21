@@ -40,31 +40,63 @@
   </head>
   <link rel="stylesheet" href="./src/sass/main.scss" />
   <body>
+    <!-- Modale i popupy -->
+
     <div class="pop-up">
       <div class="pop-up_img">
-        <button class=" mark"><i class="bx bx-x"></i></button>
-        <button class="button next"><i class='bx bxs-right-arrow'></i></button>
-        <button class="button prev"><i class='bx bxs-left-arrow'></i></button>
+        <button class="mark"><i class="bx bx-x"></i></button>
+        <button class="button next"><i class="bx bxs-right-arrow"></i></button>
+        <button class="button prev"><i class="bx bxs-left-arrow"></i></button>
       </div>
     </div>
-    <div class="loading fixed items-center justify-center w-full h-full bg-white z-[100] gap-8">
-     <img src="./src/assets/img/load.svg" alt="loading icon" class="h-24 w-24 animate-spin">
-     <p class="text-2xl text-green">Loading...</p>
+
+    <div
+      class="loading fixed items-center justify-center w-full h-full bg-white z-[100] gap-8"
+    >
+      <img
+        src="./src/assets/img/load.svg"
+        alt="loading icon"
+        class="h-24 w-24 animate-spin"
+      />
+      <p class="text-2xl text-green">Loading...</p>
     </div>
-    <div class="cookie-modal fixed  justify-center items-center p-8 w-full h-full bg-black/80 z-[90]">
-      <div class="flex flex-col gap-10 p-8 max-w-[100rem] max-h-[90vh] overflow-y-scroll md:overflow-y-auto bg-white">
+
+    <div
+      class="cookie-modal fixed justify-center items-center p-8 w-full h-full bg-black/80 z-[90]"
+    >
+      <div
+        class="flex flex-col gap-10 p-8 max-w-[100rem] max-h-[90vh] overflow-y-scroll md:overflow-y-auto bg-white"
+      >
         <p class="text-[2.2rem] font-medium">Wiadomośc do rekrutera</p>
-        <p class="text-[1.4rem]">Na wstępię chcę podziękować za możliwość udziału w kolejnym etapie rekrutacji. Chciałbym podzielić się moimi spostrzeżeniami i uwagami dotyczących projektu. Dodałem parę animacji i komponentów, które moim zdaniem lekko ożywią strone np: subtelny parallax, własny header slider, customowy scrollbar, loading screen, favicon, ciekawe hovery i ten modal. Pragnę również poruszyć temat tailwinda i sass'a. Cały projekt został oparty o tailwind CSS, lecz w pewnych momentach użyłem sass'a aby zrobić customowe klasy (w dalszym ciągu oparte o tailwind) w celu wykożystnia zasady DRY oraz do JS. Tailwinda używam codziennie do pracy z Reactem, lecz w vanilla kodzie lepiej pasuje mi się z SASS oraz BEM, w tym projekcie postawiłem na połącznie tych technologi z dużym naciskiem na tailwinda. Zapraszam do obejrzenia projektu!
+        <p class="text-[1.4rem]">
+          Na wstępię chcę podziękować za możliwość udziału w kolejnym etapie
+          rekrutacji. Chciałbym podzielić się moimi spostrzeżeniami i uwagami
+          dotyczących projektu. Dodałem parę animacji i komponentów, które moim
+          zdaniem lekko ożywią strone np: subtelny parallax, własny header
+          slider, customowy scrollbar, loading screen, favicon, ciekawe hovery i
+          ten modal. Pragnę również poruszyć temat tailwinda i sass'a. Cały
+          projekt został oparty o tailwind CSS, lecz w pewnych momentach użyłem
+          sass'a aby zrobić customowe klasy (w dalszym ciągu oparte o tailwind)
+          w celu wykożystnia zasady DRY oraz do JS. Tailwinda używam codziennie
+          do pracy z Reactem, lecz w vanilla kodzie lepiej pasuje mi się z SASS
+          oraz BEM, w tym projekcie postawiłem na połącznie tych technologi z
+          dużym naciskiem na tailwinda. Zapraszam do obejrzenia projektu!
         </p>
-        <button class="cookie-btn link primary text-[1.3rem]">Przeczytałem
+        <button class="cookie-btn link primary text-[1.3rem]">
+          Przeczytałem
         </button>
       </div>
     </div>
+
+    <!-- Nawigacja -->
+
     <nav
       class="p-[2rem] shadow-lg fixed md:py-[2.4rem] md:px-[2.4rem] w-full bg-white z-50"
     >
       <div class="wrapper flex justify-between items-center">
-          <a href="#"><img src="./src/assets/img/main-logo.svg" alt="logo firmy"></a>
+        <a href="#"
+          ><img src="./src/assets/img/main-logo.svg" alt="logo firmy"
+        /></a>
         <button class="burger p-4 flex flex-col gap-[.5rem] md:hidden">
           <div class="bar"></div>
           <div class="bar"></div>
@@ -74,309 +106,413 @@
           class="nav-list absolute md:flex flex-col items-center top-[7.6rem] left-0 w-full text-[1.4rem] md:static md:flex-row md:w-max md:gap-[4.8rem]"
         >
           <li class="nav-item">
-           <div class="relative">
-            <a class="dropdown-btn flex gap-[.5rem] cursor-pointer">Oferta
-              <img class="nav-arrow" src="./src/assets/img/vectors/black_arrow_down_vector.svg" alt="czarna strzalka pokazująca możliwość rozwijania treści">
-            </a>
-             <ul class="dropdown bg-white absolute -bottom-[6.6rem] left-1/2 -translate-x-1/2 flex p-4 gap-8 z-[1000]">
+            <div class="relative">
+              <a class="dropdown-btn flex gap-[.5rem] cursor-pointer"
+                >Oferta
+                <img
+                  class="nav-arrow"
+                  src="./src/assets/img/vectors/black_arrow_down_vector.svg"
+                  alt="czarna strzalka pokazująca możliwość rozwijania treści"
+                />
+              </a>
+              <ul
+                class="dropdown bg-white absolute -bottom-[6.6rem] left-1/2 -translate-x-1/2 flex p-4 gap-8 z-[1000]"
+              >
                 <li class="nav-item"><a href="#offer">Projekty</a></li>
                 <li class="nav-item"><a href="#offer">Wizualizacje</a></li>
                 <li class="nav-item"><a href="#offer">Realizacje</a></li>
-              </ul>           
-           </div>
+              </ul>
+            </div>
           </li>
           <li class="nav-item">
-            <a href="">O firmie</a>
+            <a href="#company" aria-label="link nawigacyjny do sekcji o firmie"
+              >O firmie</a
+            >
           </li>
           <li class="nav-item">
-            <a href="">Realizacje</a>
+            <a
+              href="#projects"
+              aria-label="link nawigacyjny do sekcji realizacje"
+              >Realizacje</a
+            >
           </li>
           <li class="nav-item">
-            <a href="">Kontakt</a>
+            <a href="#contact" aria-label="link nawigacyjny do sekcji kontakt"
+              >Kontakt</a
+            >
           </li>
           <li class="nav-item">
             <div class="search h-[2.4rem] w-[2.4rem] relative overflow-hidden">
-             <div class="relative left-[4rem] w-[21rem] h-full">
-              <input type="text" placeholder="Szukaj..." class="search-input absolute w-full h-full border-b-[1px] border-b-black/20 p-2 outline-none">
-             </div>
-            <svg class="search-icon absolute left-[1.2rem] top-1/2 -translate-x-[50%] -translate-y-[50%] cursor-pointer"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M10 2.25C5.71979 2.25 2.25 5.71979 2.25 10C2.25 14.2802 5.71979 17.75 10 17.75C11.87 17.75 13.5853 17.0877 14.9242 15.9848L20.4697 21.5303L20.5538 21.6029C20.8474 21.8208 21.2641 21.7966 21.5303 21.5303C21.8232 21.2374 21.8232 20.7626 21.5303 20.4697L15.9848 14.9242C17.0877 13.5853 17.75 11.87 17.75 10C17.75 5.71979 14.2802 2.25 10 2.25ZM10 3.75C13.4518 3.75 16.25 6.54822 16.25 10C16.25 13.4518 13.4518 16.25 10 16.25C6.54822 16.25 3.75 13.4518 3.75 10C3.75 6.54822 6.54822 3.75 10 3.75Z" fill="#111111"/>
-            </svg>
+              <div class="relative left-[4rem] w-[21rem] h-full">
+                <input
+                  type="text"
+                  placeholder="Szukaj..."
+                  class="search-input absolute w-full h-full border-b-[1px] border-b-black/20 p-2 outline-none"
+                />
+              </div>
+              <svg
+                class="search-icon absolute left-[1.2rem] top-1/2 -translate-x-[50%] -translate-y-[50%] cursor-pointer"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10 2.25C5.71979 2.25 2.25 5.71979 2.25 10C2.25 14.2802 5.71979 17.75 10 17.75C11.87 17.75 13.5853 17.0877 14.9242 15.9848L20.4697 21.5303L20.5538 21.6029C20.8474 21.8208 21.2641 21.7966 21.5303 21.5303C21.8232 21.2374 21.8232 20.7626 21.5303 20.4697L15.9848 14.9242C17.0877 13.5853 17.75 11.87 17.75 10C17.75 5.71979 14.2802 2.25 10 2.25ZM10 3.75C13.4518 3.75 16.25 6.54822 16.25 10C16.25 13.4518 13.4518 16.25 10 16.25C6.54822 16.25 3.75 13.4518 3.75 10C3.75 6.54822 6.54822 3.75 10 3.75Z"
+                  fill="#111111"
+                />
+              </svg>
             </div>
           </li>
         </ul>
       </div>
     </nav>
 
-    <header class="relative pt-[7.6rem] md:pt-[6.9rem] overflow-hidden">
-		<div class="slider flex bg-beige transition-transform duration-1000">
-			<div class="slider-item">
-				<div class="slider-container">
-					<div class="slider-content">
-						<div class="slider-text" >
-							<h1 class="slider-heading">Nowoczesna<br> aranżacja <br> Twojego ogrodu</h1>
-							<p class="slider-desc paragraph">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług  z indywidualnym podejściem do każdego projektu.</p>
-						</div>
-						<div class="slider-buttons">
-							<a
-							href="#contact"
-							class="link primary"
-              aria-label="link do sekcji kontakt"
-							>Skontaktuj się z nami</a
-						  >    
-						  <a
-						  href="#projects"
-						  class="link secondary flex gap-2 items-center"
-              aria-label="link do sekcji projekty"
-						  >Zobacz nasze realizacje <img src="./src/assets/img/vectors/green_down_vector.svg" alt="zdjecię zielonej strzałki w doł"></a
-						>
-						</div>
-					</div>
-			
-				</div>
-				<div class="slider-img-box">
-					<img src="./src/assets/img/header/header1.png" alt="zdjecie realizacji" >
-				</div>
-			</div>
-			<div class="slider-item">
-				<div class="slider-container">
-					<div class="slider-content">
-						<div class="slider-text">
-							<h2 class="slider-heading">Innowacyjne<br> podejście do <br>  naszego klienta</h2>	
-							<p class="slider-desc paragraph">
-							Nasz wykwalifikowany zespół wraz z ich doświadczeniem, podchodzą do każdego klienta indywidualnie. Jesteśmy otwarci na pomysły klientów oraz chętnie doradzimy.
-							</p>
-						</div>
-						<div class="slider-buttons">
-							<a
-							href="#contact"
-							class="link primary"
-              aria-label="link do sekcji kontakt"
-              tabindex="-1"
-							>Skontaktuj się z nami</a
-						  >    
-						  <a
-						  href="#projects"
-						  class="link secondary flex gap-2 items-center"
-              aria-label="link do sekcji projekty"
-              tabindex="-1"
-						  >Zobacz nasze realizacje <img src="./src/assets/img/vectors/green_down_vector.svg" alt="zdjecię zielonej strzałki w doł"></a
-						>
-						</div>
-					</div>
-			
-				</div>
-				<div class="slider-img-box">
-					<img src="./src/assets/img/header/header2.jpg" alt="zdjcie realizacji">
-				</div>
-			</div>
-			<div class="slider-item">
-				<div class="slider-container">
-					<div class="slider-content">
-						<div class="slider-text">
-							<h2 class="slider-heading">Mistrzowskie <br> poczucie <br> stylu oraz smaku</h2>
-							<p class="slider-desc paragraph">
-							Od lat projektujey i wykonujemy majestatyczne ogrody. Wygraliśmy wiele konkursów ogrodniczych w tym <q>Garden US</q>. Z nami twój ogród zmieni się nie do poznania.
-							</p>
-						</div>
-						<div class="slider-buttons">
-							<a
-							href="#contact"
-							class="link primary"
-              aria-label="link do sekcji kontakt"
-              tabindex="-1"
-							>Skontaktuj się z nami</a
-						  >    
-						  <a
-						  href="#projects"
-						  class="link secondary flex gap-2 items-center"
-              aria-label="link do sekcji projekty"
-              tabindex="-1"
-						  >Zobacz nasze realizacje<img src="./src/assets/img/vectors/green_down_vector.svg" alt="zdjecię zielonej strzałki w doł"></a
-						>
-						</div>
-					</div>
-				</div>
-				<div class="slider-img-box">
-					<img src="./src/assets/img/header/header3.jpg" alt="zdjecie realizacji">
-				</div>
-			</div>
-			<div class="slider-item">
-				<div class="slider-container">
-					<div class="slider-content">
-						<div class="slider-text">
-							<h2 class="slider-heading">Najtańszy <br> dystrybutor <br> na terenie Polski</h2>
-							<p class="slider-desc paragraph">
-								Nasz ceny są niższe od konkurencyjnych firm na terenie północnej Polski. Sami hodujemy kwiaty, przez co ceny są bardzo atrakcyjne. Posiadamy wszystkie niezbędne certyfikaty i zaświadczenia.
-							</p>
-						</div>
-						<div class="slider-buttons">
-							<a
-							href="#contact"
-              aria-label="link do sekcji kontakt"
-							class="link primary"
-              tabindex="-1"
-							>Skontaktuj się z nami</a
-						  >    
-						  <a
-						  href="#projects"
-              aria-label="link do sekcji z projektami"
-						  class="link secondary flex gap-2 items-center"
-              tabindex="-1"
-						  >Zobacz nasze realizacje <img src="./src/assets/img/vectors/green_down_vector.svg" alt="zdjecie naszego ogrodu"></a
-						>
-						</div>
-					</div>
-			
-				</div>
-				<div class="slider-img-box">
-					<img src="./src/assets/img/header/header4.jpg" alt="zdjecie ogrodu">
-				</div>
-			</div>
-		</div>
-			
-		<div class=" dots absolute bottom-[10.5rem] right-16 flex gap-4">
-		</div>
+    <!-- Header  -->
 
-		<div class="absolute bottom-0 right-0 flex gap-[3.2rem] bg-gray px-[3.2rem] py-[2.4rem]">
-			<button class="slider-prev transition-transform hover:scale-125">
-				<img  src="./src/assets/img/vectors/header_left_vector.svg" class="" alt="lewy przycik do przewijania karuzeli do tyłu">
-			</button>
-			<button class="slider-next transition-transform hover:scale-125">
-				<img  src="./src/assets/img/vectors/header_right_vector.svg" alt="prawy przycisk do przyijania karuzeli do przodu">
-			</button>
-		</div>
-	</header>
+    <header class="relative pt-[7.6rem] md:pt-[6.9rem] overflow-hidden">
+      <div class="slider flex bg-beige transition-transform duration-1000">
+        <div class="slider-item">
+          <div class="slider-container">
+            <div class="slider-content">
+              <div class="slider-text">
+                <h1 class="slider-heading">
+                  Nowoczesna<br />
+                  aranżacja <br />
+                  Twojego ogrodu
+                </h1>
+                <p class="slider-desc paragraph">
+                  Marka GiardDesign to wieloletnie doświadczenie i wysoka
+                  estetyka realizacji. Oferujemy kompleksowy zakres usług z
+                  indywidualnym podejściem do każdego projektu.
+                </p>
+              </div>
+              <div class="slider-buttons">
+                <a
+                  href="#contact"
+                  class="link primary"
+                  aria-label="link do sekcji kontakt"
+                  >Skontaktuj się z nami</a
+                >
+                <a
+                  href="#projects"
+                  class="link secondary flex gap-2 items-center"
+                  aria-label="link do sekcji projekty"
+                  >Zobacz nasze realizacje
+                  <img
+                    src="./src/assets/img/vectors/green_down_vector.svg"
+                    alt="zdjecię zielonej strzałki w doł"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="slider-img-box">
+            <img
+              src="./src/assets/img/header/header1.png"
+              alt="zdjecie realizacji"
+            />
+          </div>
+        </div>
+        <div class="slider-item">
+          <div class="slider-container">
+            <div class="slider-content">
+              <div class="slider-text">
+                <h2 class="slider-heading">
+                  Innowacyjne<br />
+                  podejście do <br />
+                  naszego klienta
+                </h2>
+                <p class="slider-desc paragraph">
+                  Nasz wykwalifikowany zespół wraz z ich doświadczeniem,
+                  podchodzą do każdego klienta indywidualnie. Jesteśmy otwarci
+                  na pomysły klientów oraz chętnie doradzimy.
+                </p>
+              </div>
+              <div class="slider-buttons">
+                <a
+                  href="#contact"
+                  class="link primary"
+                  aria-label="link do sekcji kontakt"
+                  tabindex="-1"
+                  >Skontaktuj się z nami</a
+                >
+                <a
+                  href="#projects"
+                  class="link secondary flex gap-2 items-center"
+                  aria-label="link do sekcji projekty"
+                  tabindex="-1"
+                  >Zobacz nasze realizacje
+                  <img
+                    src="./src/assets/img/vectors/green_down_vector.svg"
+                    alt="zdjecię zielonej strzałki w doł"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="slider-img-box">
+            <img
+              src="./src/assets/img/header/header2.jpg"
+              alt="zdjcie realizacji"
+            />
+          </div>
+        </div>
+        <div class="slider-item">
+          <div class="slider-container">
+            <div class="slider-content">
+              <div class="slider-text">
+                <h2 class="slider-heading">
+                  Mistrzowskie <br />
+                  poczucie <br />
+                  stylu oraz smaku
+                </h2>
+                <p class="slider-desc paragraph">
+                  Od lat projektujey i wykonujemy majestatyczne ogrody.
+                  Wygraliśmy wiele konkursów ogrodniczych w tym
+                  <q>Garden US</q>. Z nami twój ogród zmieni się nie do
+                  poznania.
+                </p>
+              </div>
+              <div class="slider-buttons">
+                <a
+                  href="#contact"
+                  class="link primary"
+                  aria-label="link do sekcji kontakt"
+                  tabindex="-1"
+                  >Skontaktuj się z nami</a
+                >
+                <a
+                  href="#projects"
+                  class="link secondary flex gap-2 items-center"
+                  aria-label="link do sekcji projekty"
+                  tabindex="-1"
+                  >Zobacz nasze realizacje<img
+                    src="./src/assets/img/vectors/green_down_vector.svg"
+                    alt="zdjecię zielonej strzałki w doł"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="slider-img-box">
+            <img
+              src="./src/assets/img/header/header3.jpg"
+              alt="zdjecie realizacji"
+            />
+          </div>
+        </div>
+        <div class="slider-item">
+          <div class="slider-container">
+            <div class="slider-content">
+              <div class="slider-text">
+                <h2 class="slider-heading">
+                  Najtańszy <br />
+                  dystrybutor <br />
+                  na terenie Polski
+                </h2>
+                <p class="slider-desc paragraph">
+                  Nasz ceny są niższe od konkurencyjnych firm na terenie
+                  północnej Polski. Sami hodujemy kwiaty, przez co ceny są
+                  bardzo atrakcyjne. Posiadamy wszystkie niezbędne certyfikaty i
+                  zaświadczenia.
+                </p>
+              </div>
+              <div class="slider-buttons">
+                <a
+                  href="#contact"
+                  aria-label="link do sekcji kontakt"
+                  class="link primary"
+                  tabindex="-1"
+                  >Skontaktuj się z nami</a
+                >
+                <a
+                  href="#projects"
+                  aria-label="link do sekcji z projektami"
+                  class="link secondary flex gap-2 items-center"
+                  tabindex="-1"
+                  >Zobacz nasze realizacje
+                  <img
+                    src="./src/assets/img/vectors/green_down_vector.svg"
+                    alt="zdjecie naszego ogrodu"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="slider-img-box">
+            <img
+              src="./src/assets/img/header/header4.jpg"
+              alt="zdjecie ogrodu"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="dots absolute bottom-[10.5rem] right-16 flex gap-4"></div>
+
+      <div
+        class="absolute bottom-0 right-0 flex gap-[3.2rem] bg-gray px-[3.2rem] py-[2.4rem]"
+      >
+        <button class="slider-prev transition-transform hover:scale-125">
+          <img
+            src="./src/assets/img/vectors/header_left_vector.svg"
+            class=""
+            alt="lewy przycik do przewijania karuzeli do tyłu"
+          />
+        </button>
+        <button class="slider-next transition-transform hover:scale-125">
+          <img
+            src="./src/assets/img/vectors/header_right_vector.svg"
+            alt="prawy przycisk do przyijania karuzeli do przodu"
+          />
+        </button>
+      </div>
+    </header>
+
+    <!-- Main  -->
 
     <main>
+      <!-- Sekcja z kartami -->
+
       <section class="pt-48 pb-64 px-8 bg-gray" id="offer">
-				<div class="wrapper flex flex-col gap-[9.6rem]">
-					<div class="parallax flex flex-col gap-[1.6rem] lg:pl-32">
-						<h2 class="subheading text-green"
-							>Oferta</h2
-						>
-						<div class="flex flex-col gap-[3.2rem]">
-							<p class="heading text-black">
-								<span class="heading-first-part">Działamy</span>
-								<span class="heading-second-part">kompleksowo</span>
-							</p>
-							<p class="paragraph text-black">
-								Oferujemy kompletną obsługę inwestycji terenów zielonych.
-								Projektujemy nowoczesne ogrody <br />
-								przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt,
-								zwizualizujemy go i wcielimy <br />
-								w życie, a na każdym etapie posłużymy radą i wieloletnim
-								doświadczeniem.
-							</p>
-						</div>
-					</div>
-					<ul class="flex flex-col gap-[6.4rem] items-center lg:flex-row">
-						<li
-							class="card group/card" data-aos="zoom-in"
+        <div class="wrapper flex flex-col gap-[9.6rem]">
+          <div class="parallax flex flex-col gap-[1.6rem] lg:pl-32">
+            <h2 class="subheading text-green">Oferta</h2>
+            <div class="flex flex-col gap-[3.2rem]">
+              <p class="heading text-black">
+                <span class="heading-first-part">Działamy</span>
+                <span class="heading-second-part">kompleksowo</span>
+              </p>
+              <p class="paragraph text-black">
+                Oferujemy kompletną obsługę inwestycji terenów zielonych.
+                Projektujemy nowoczesne ogrody <br />
+                przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt,
+                zwizualizujemy go i wcielimy <br />
+                w życie, a na każdym etapie posłużymy radą i wieloletnim
+                doświadczeniem.
+              </p>
+            </div>
+          </div>
+          <ul class="flex flex-col gap-[6.4rem] items-center lg:flex-row">
+            <li
+              class="card group/card"
+              data-aos="zoom-in"
               data-aos-offset="100"
               data-aos-once="true"
               data-aos-duration="600"
-						>
-							<div class="flex flex-col gap-[3.2rem]">
-								<img
-									src="./src/assets/img/card-icons/card-icon(1).png"
-									class="w-16 h-16"
+            >
+              <div class="flex flex-col gap-[3.2rem]">
+                <img
+                  src="./src/assets/img/card-icons/card-icon(1).png"
+                  class="w-16 h-16"
                   alt="ikona długopisu"
-								/>
-								<div class="flex flex-col gap-[1.2rem]">
-									<h3
-										class="card-heading group-hover/card:text-green"
-									>
-										Projekty
-									</h3>
-									<p class="text-[1.4rem] text-black">
-										Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
-										wykorzystaniem istniejącej przestrzeni.
-									</p>
-								</div>
-							</div>
-								<a href="#" class="card-btn">Dowiedz się więcej<img src="./src/assets/img/vectors/green_right_vector.svg" alt="zielona strzalka w prawo" /></a>
-							
-					</li>
-						<li
-							class="card group/card" data-aos="zoom-in"
+                />
+                <div class="flex flex-col gap-[1.2rem]">
+                  <h3 class="card-heading group-hover/card:text-green">
+                    Projekty
+                  </h3>
+                  <p class="text-[1.4rem] text-black">
+                    Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
+                    wykorzystaniem istniejącej przestrzeni.
+                  </p>
+                </div>
+              </div>
+              <a href="#" class="card-btn"
+                >Dowiedz się więcej<img
+                  src="./src/assets/img/vectors/green_right_vector.svg"
+                  alt="zielona strzalka w prawo"
+              /></a>
+            </li>
+            <li
+              class="card group/card"
+              data-aos="zoom-in"
               data-aos-delay="250"
               data-aos-offset="100"
               data-aos-once="true"
               data-aos-duration="600"
-						>
-							<div class="flex flex-col gap-[3.2rem]">
-								<img
-									src="./src/assets/img/card-icons/card-icon(2).png"
-									class="w-[4rem] h-[4rem] object-contain"
+            >
+              <div class="flex flex-col gap-[3.2rem]">
+                <img
+                  src="./src/assets/img/card-icons/card-icon(2).png"
+                  class="w-[4rem] h-[4rem] object-contain"
                   alt="ikona oka"
-								/>
-								<div class="flex flex-col gap-[1.2rem]">
-									<h3
-										class="card-heading group-hover/card:text-green"
-									>
-										Wizualizacje
-									</h3>
-									<p class="text-[1.4rem]">
-										Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.
-									</p>
-								</div>
-							</div>
-							<a href="#" class="card-btn">Dowiedz się więcej<img src="./src/assets/img/vectors/green_right_vector.svg" alt="zielona strzalka w prawo" /></a>
-					
-					</li>
-						<li
-							class="card group/card" data-aos="zoom-in"
+                />
+                <div class="flex flex-col gap-[1.2rem]">
+                  <h3 class="card-heading group-hover/card:text-green">
+                    Wizualizacje
+                  </h3>
+                  <p class="text-[1.4rem]">
+                    Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego
+                    spaceru animowanego w technologii 3D.
+                  </p>
+                </div>
+              </div>
+              <a href="#" class="card-btn"
+                >Dowiedz się więcej<img
+                  src="./src/assets/img/vectors/green_right_vector.svg"
+                  alt="zielona strzalka w prawo"
+              /></a>
+            </li>
+            <li
+              class="card group/card"
+              data-aos="zoom-in"
               data-aos-delay="500"
               data-aos-offset="100"
               data-aos-once="true"
               data-aos-duration="600"
-						>
-							<div class="flex flex-col gap-[3.2rem]">
-								<img
-									src="./src/assets/img/card-icons/card-icon(3).png"
-									class="w-[4rem] h-[4rem]"
+            >
+              <div class="flex flex-col gap-[3.2rem]">
+                <img
+                  src="./src/assets/img/card-icons/card-icon(3).png"
+                  class="w-[4rem] h-[4rem]"
                   alt="ikona gwiazdek"
-								/>
-								<div class="flex flex-col gap-[1.2rem]">
-									<h3
-										class="card-heading group-hover/card:text-green"
-									>
-										Realizacje
-									</h3>
-									<p class="text-[1.4rem]">
-										Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.
-									</p>
-								</div>
-							</div>
-							<div>
-                <a href="#projects" class="card-btn">Zobacz nasze realizacje<img src="./src/assets/img/vectors/green_right_vector.svg" alt="zielona strzalka w prawo" /></a>
+                />
+                <div class="flex flex-col gap-[1.2rem]">
+                  <h3 class="card-heading group-hover/card:text-green">
+                    Realizacje
+                  </h3>
+                  <p class="text-[1.4rem]">
+                    Zrealizujemy Twoje marzenie przy użyciu najnowszych
+                    rozwiązań i zaawansowanych technologii.
+                  </p>
+                </div>
               </div>
-					</li>
-				</ul>
-			</section>
+              <div>
+                <a href="#projects" class="card-btn"
+                  >Zobacz nasze realizacje<img
+                    src="./src/assets/img/vectors/green_right_vector.svg"
+                    alt="zielona strzalka w prawo"
+                /></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Sekcja o firmie  -->
+
       <section
-        class=" flex flex-col-reverse bg-green overflow-hidden lg:flex-row lg:gap-[6.4rem] lg:items-center" id="company"
+        class="flex flex-col-reverse bg-green overflow-hidden lg:flex-row lg:gap-[6.4rem] lg:items-center"
+        id="company"
       >
         <div class="lg:w-[50%] lg:h-[72rem]">
           <img
             class="max-h-[40rem] lg:max-h-[72rem] lg:h-full w-full object-cover object-center"
-            src="./src/assets/img/realization-photo.png" alt="zdjecie naszego najwiekszego projektu"
+            src="./src/assets/img/realization-photo.png"
+            alt="zdjecie naszego najwiekszego projektu"
           />
         </div>
         <div
-          class="flex flex-col gap-[7.2rem] px-8 py-16 lg:w-[57.9rem] lg:pl-[7.6rem] lg:px-a lg:pr-[2rem] 2xl:pl-[9.6] 2xl:pr-0"  data-aos="fade-left"
+          class="flex flex-col gap-[7.2rem] px-8 py-16 lg:w-[57.9rem] lg:pl-[7.6rem] lg:px-a lg:pr-[2rem] 2xl:pl-[9.6] 2xl:pr-0"
+          data-aos="fade-left"
           data-aos-once="true"
           data-aos-duration="800"
           data-aos-offset="200"
         >
-          <div class="flex flex-col gap-[1.6rem]"
-          >
-            <h2 class="subheading text-gray"
-              >O firmie</h2
-            >
+          <div class="flex flex-col gap-[1.6rem]">
+            <h2 class="subheading text-gray">O firmie</h2>
             <div class="flex flex-col gap-[3.2rem]">
-              <p class=" text-gray heading">
+              <p class="text-gray heading">
                 <span class="heading-first-part">Tworzymy <br />z</span>
                 <span class="heading-second-part">pasją</span>
               </p>
@@ -390,30 +526,30 @@
               </p>
             </div>
           </div>
-		  <a
-		  href="#company"
-		  class="link secondary-gray flex gap-2 items-center"
-		  >Poznaj nas bliżej <img src="./src/assets/img/vectors/white_right_vector.svg" alt="biała strzałka w prawo"></a
-		>    
+          <a href="#company" class="link secondary-gray flex gap-2 items-center"
+            >Poznaj nas bliżej
+            <img
+              src="./src/assets/img/vectors/white_right_vector.svg"
+              alt="biała strzałka w prawo"
+          /></a>
         </div>
       </section>
+
+      <!-- Galeria  -->
+
       <section
-        class="relative overflow-hidden flex flex-col gap-[9.6rem] bg-beige px-8 pt-[12rem] pb-[4.4rem]" id="projects"
+        class="relative overflow-hidden flex flex-col gap-[9.6rem] bg-beige px-8 pt-[12rem] pb-[4.4rem]"
+        id="projects"
       >
         <div class="wrapper w-full md:pl-[8rem] flex flex-col gap-[1.6rem]">
-          <h2 class="subheading text-green"
-            >Realizacje</h2
-          >
+          <h2 class="subheading text-green">Realizacje</h2>
           <p class="heading text-black">
             <span class="heading-first-part">Nasze</span>
             <span class="heading-second-part">projekty</span>
           </p>
         </div>
         <div class="gallery-ctn overflow-hidden">
-          <div
-            class="gallery relative mx-auto my-0 max-w-[1440px]"
-            data-masonry='{ "itemSelector": ".gallery-item", "gutter": 43, "originCenter": true, "horizontalOrder": true, "containerStyle": null, "columnWidth": 451}'
-          >
+          <div class="gallery relative mx-auto my-0 max-w-[1440px]">
             <div class="gallery-item">
               <img
                 class="w-full"
@@ -524,8 +660,14 @@
         <button
           class="gallery-btn link secondary-black flex gap-2 items-center absolute bottom-8 left-1/2 translate-x-[-50%] z-30"
         >
-          Rozwiń <img src="./src/assets/img/vectors/black_down_vector.svg" alt="czarna strzałka w dół">
+          Rozwiń
+          <img
+            src="./src/assets/img/vectors/black_down_vector.svg"
+            alt="czarna strzałka w dół"
+          />
         </button>
+
+        <!-- Sekcja breaker  -->
       </section>
       <section class="lg:py-24">
         <div
@@ -536,47 +678,56 @@
           data-aos-offset="200"
         >
           <h2
-            class="text-[4rem] tracking-[-2px] text-center lg:text-left text-gray leading-[120%]  "
+            class="text-[4rem] tracking-[-2px] text-center lg:text-left text-gray leading-[120%]"
           >
             <span class="font-montserrat font-normal"
-              >Zostańmy w kontakcie! <br> Znajdziejsz nas na</span
-            ><span class="font-inter italic font-medium tracking-[1px]"> Instagramie.</span>
+              >Zostańmy w kontakcie! <br />
+              Znajdziejsz nas na</span
+            ><span class="font-inter italic font-medium tracking-[1px]">
+              Instagramie.</span
+            >
           </h2>
           <div class="flex flex-col gap-[2.4rem] items-center lg:items-start">
-            <p
-              class="paragraph text-center lg:text-left text-gray"
-            >
-              Śledź nasze <br> najnowsze realizacje!
+            <p class="paragraph text-center lg:text-left text-gray">
+              Śledź nasze <br />
+              najnowsze realizacje!
             </p>
-			<a
-      href="https://www.instagram.com/adrespect/?hl=en" rel="noopener" aria-label="link do instagrama firmy"
-			class="link primary-gray"
-			>Instagram</a
-		  >    
+            <a
+              href="https://www.instagram.com/adrespect/?hl=en"
+              rel="noopener"
+              aria-label="link do instagrama firmy"
+              class="link primary-gray"
+              >Instagram</a
+            >
           </div>
         </div>
       </section>
     </main>
+
+    <!-- Stopka  -->
+
     <footer class="bg-black px-8 py-32" id="contact">
-      <div
-        class="flex flex-col gap-[6rem] lg:gap-48 max-w-[104rem] mx-auto"
-      >
+      <div class="flex flex-col gap-[6rem] lg:gap-48 max-w-[104rem] mx-auto">
         <div class="flex flex-col gap-[6.2rem]">
           <div
             class="flex flex-col items-center gap-[2.4rem] lg:flex-row lg:justify-between"
           >
-            <a href="#"><img src="./src/assets/img/giarddesign.png" alt="logo firmy giarddesign" /></a>
+            <a href="#"
+              ><img
+                src="./src/assets/img/giarddesign.png"
+                alt="logo firmy giarddesign"
+            /></a>
             <div class="flex flex-col items-center gap-[2.4rem] lg:flex-row">
               <p class="paragraph text-gray text-center">
                 Daj znać co możemy dla Ciebie zrobić!
               </p>
-			  <a
-			  href="mailto:giarddesign@kontakt.pl"
-			  class="link primary"
-        aria-label="mail do frimy giarddesign"
-        rel="noopener"
-			  >Skontaktuj się z nami</a
-			>  
+              <a
+                href="mailto:giarddesign@kontakt.pl"
+                class="link primary"
+                aria-label="mail do frimy giarddesign"
+                rel="noopener"
+                >Skontaktuj się z nami</a
+              >
             </div>
           </div>
           <hr class="text-gray" />
@@ -586,14 +737,50 @@
             <div
               class="flex flex-wrap items-center justify-center gap-8 lg:flex-nowrap lg:gap-[4.8rem]"
             >
-              <a href="https://adrespect.pl/kontakt/#dzial" class="footer-link" rel="noopener" aria-label="link do strony kontaktowej">Kontakt</a>
-              <a href="https://www.instagram.com/adrespect/?hl=en" class="footer-link" rel="noopener" aria-label="link do instagrama firmy">Instagram</a>
-              <a href="https://www.facebook.com/adrespectagency/" class="footer-link" rel="noopener" aria-label="link do facebooka firmy">Facebook</a>
-              <a href="https://www.linkedin.com/company/adrespect/?originalSubdomain=pl " class="footer-link" rel="noopener" aria-label="link do linkedin firmy">Linkedin</a>
+              <a
+                href="https://adrespect.pl/kontakt/#dzial"
+                class="footer-link"
+                rel="noopener"
+                aria-label="link do strony kontaktowej"
+                >Kontakt</a
+              >
+              <a
+                href="https://www.instagram.com/adrespect/?hl=en"
+                class="footer-link"
+                rel="noopener"
+                aria-label="link do instagrama firmy"
+                >Instagram</a
+              >
+              <a
+                href="https://www.facebook.com/adrespectagency/"
+                class="footer-link"
+                rel="noopener"
+                aria-label="link do facebooka firmy"
+                >Facebook</a
+              >
+              <a
+                href="https://www.linkedin.com/company/adrespect/?originalSubdomain=pl "
+                class="footer-link"
+                rel="noopener"
+                aria-label="link do linkedin firmy"
+                >Linkedin</a
+              >
             </div>
             <div class="flex gap-8 lg:gap-[4.8rem]">
-              <a href="tel:000000000" class="footer-link" aria-label="telefon do frimy giarddesign" rel="noopener">000-000-000</a>
-              <a href="mailto:giarddesign@kontakt.pl" class="footer-link" aria-label="mail do frimy giarddesign" rel="noopener">giarddesign@kontakt.pl</a>
+              <a
+                href="tel:000000000"
+                class="footer-link"
+                aria-label="telefon do frimy giarddesign"
+                rel="noopener"
+                >000-000-000</a
+              >
+              <a
+                href="mailto:giarddesign@kontakt.pl"
+                class="footer-link"
+                aria-label="mail do frimy giarddesign"
+                rel="noopener"
+                >giarddesign@kontakt.pl</a
+              >
             </div>
           </div>
         </div>
@@ -603,13 +790,15 @@
           <p>Prawa zastrzeżone @ <span class="year"></span></p>
           <div class="flex gap-[1.6rem]">
             <p>made by</p>
-            <img src="./src/assets/img/logo-full-light.png" alt="logo firmy adRespect" />
+            <img
+              src="./src/assets/img/logo-full-light.png"
+              alt="logo firmy adRespect"
+            />
           </div>
         </div>
       </div>
     </footer>
 
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>

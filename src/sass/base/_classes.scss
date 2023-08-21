@@ -1,3 +1,6 @@
+
+// Utility classes
+
 .wrapper {
   @apply mx-auto my-0 max-w-[1262px];
 }
@@ -21,6 +24,8 @@
   }
 }
 
+// Loading classes
+
 .loading {
   @apply flex opacity-100;
 }
@@ -28,6 +33,10 @@
 .active-loading {
   animation: closeLoading .3s linear forwards;
 }
+
+
+// Cookie modal classes
+
 .cookie-modal {
   @apply flex;
 }
