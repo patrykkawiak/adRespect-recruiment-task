@@ -13,6 +13,7 @@ const galeryModule = () => {
 
   const showAllImg = () => {
     gallery.classList.toggle("gallery-active");
+    // gallery.style.maxHeight = gallery.scrollHeight + 'px';
   };
   btn.addEventListener("click", showAllImg);
 

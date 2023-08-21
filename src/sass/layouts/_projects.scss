@@ -36,8 +36,9 @@
   }
   .button {
     @apply absolute bottom-1/2 translate-y-1/2 h-24 w-12 text-2xl
-	md:h-28 md:w-16 md:text-3xl lg:h-48 lg:w-24 lg:text-4xl bg-black/50;
+	md:h-28 md:w-14 md:text-3xl lg:h-48 lg:w-24 lg:text-4xl text-gray bg-black/50 transition-colors hover:text-beige;
   }
+
 }
 
 .show-pop-up {

@@ -1,8 +1,7 @@
 nawigacja
 padding na sekcji poprawic bo sie zjebal --L
-vite bundler - szmata mi zdjecia znika --H
-ogarnac pointer na kartach - zrobic cokowliwek aby wygladalo i dzialao --M
+ogarnac pointer na kartach - zrobic cokowliwek aby wygladalo i dzialao
 animacja na otwieranie (scrollHeight czy cos tam) --M
 ogarac reszte html (DRY) --H
-i na koniec sosprawdac czy wszystkie fonty sie zgadzaja
-podlinkowac dobre fonty
+
+i na koniec sosprawdac czy wszystkie fonty sie zgadzaja oraz podlinkowac dobre fonty
