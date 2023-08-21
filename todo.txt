@@ -1,2 +1,0 @@
-ogarac reszte html (DRY) --H
-ewentualnie na header zmnienic img na te same px

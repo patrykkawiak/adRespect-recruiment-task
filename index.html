@@ -97,7 +97,10 @@
         <a href="#"
           ><img src="./src/assets/img/main-logo.svg" alt="logo firmy"
         /></a>
-        <button class="burger p-4 flex flex-col gap-[.5rem] md:hidden">
+        <button
+          aria-label="przycik do otwierania nawigacji"
+          class="burger p-4 flex flex-col gap-[.5rem] md:hidden"
+        >
           <div class="bar"></div>
           <div class="bar"></div>
           <div class="bar"></div>
@@ -125,21 +128,13 @@
             </div>
           </li>
           <li class="nav-item">
-            <a href="#company" aria-label="link nawigacyjny do sekcji o firmie"
-              >O firmie</a
-            >
+            <a href="#company">O firmie</a>
           </li>
           <li class="nav-item">
-            <a
-              href="#projects"
-              aria-label="link nawigacyjny do sekcji realizacje"
-              >Realizacje</a
-            >
+            <a href="#projects">Realizacje</a>
           </li>
           <li class="nav-item">
-            <a href="#contact" aria-label="link nawigacyjny do sekcji kontakt"
-              >Kontakt</a
-            >
+            <a href="#contact">Kontakt</a>
           </li>
           <li class="nav-item">
             <div class="search h-[2.4rem] w-[2.4rem] relative overflow-hidden">
@@ -155,6 +150,7 @@
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
+                aria-label="przycisk otwierający pole wyszukiwania"
                 viewBox="0 0 24 24"
                 fill="none"
               >
@@ -353,14 +349,19 @@
       <div
         class="absolute bottom-0 right-0 flex gap-[3.2rem] bg-gray px-[3.2rem] py-[2.4rem]"
       >
-        <button class="slider-prev transition-transform hover:scale-125">
+        <button
+          class="slider-prev transition-transform hover:scale-125"
+          aria-label="przycik do przewijania karuzeli do tylu"
+        >
           <img
             src="./src/assets/img/vectors/header_left_vector.svg"
-            class=""
             alt="lewy przycik do przewijania karuzeli do tyłu"
           />
         </button>
-        <button class="slider-next transition-transform hover:scale-125">
+        <button
+          class="slider-next transition-transform hover:scale-125"
+          aria-label="przycik do przewijania karuzeli do tylu"
+        >
           <img
             src="./src/assets/img/vectors/header_right_vector.svg"
             alt="prawy przycisk do przyijania karuzeli do przodu"
@@ -695,7 +696,7 @@
             <a
               href="https://www.instagram.com/adrespect/?hl=en"
               rel="noopener"
-              aria-label="link do instagrama firmy"
+              target="_blank"
               class="link primary-gray"
               >Instagram</a
             >
@@ -724,7 +725,6 @@
               <a
                 href="mailto:giarddesign@kontakt.pl"
                 class="link primary"
-                aria-label="mail do frimy giarddesign"
                 rel="noopener"
                 >Skontaktuj się z nami</a
               >
@@ -740,44 +740,39 @@
               <a
                 href="https://adrespect.pl/kontakt/#dzial"
                 class="footer-link"
+                target="_blank"
                 rel="noopener"
-                aria-label="link do strony kontaktowej"
                 >Kontakt</a
               >
               <a
                 href="https://www.instagram.com/adrespect/?hl=en"
                 class="footer-link"
                 rel="noopener"
-                aria-label="link do instagrama firmy"
+                target="_blank"
                 >Instagram</a
               >
               <a
                 href="https://www.facebook.com/adrespectagency/"
                 class="footer-link"
+                target="_blank"
                 rel="noopener"
-                aria-label="link do facebooka firmy"
                 >Facebook</a
               >
               <a
                 href="https://www.linkedin.com/company/adrespect/?originalSubdomain=pl "
                 class="footer-link"
+                target="_blank"
                 rel="noopener"
-                aria-label="link do linkedin firmy"
                 >Linkedin</a
               >
             </div>
             <div class="flex gap-8 lg:gap-[4.8rem]">
-              <a
-                href="tel:000000000"
-                class="footer-link"
-                aria-label="telefon do frimy giarddesign"
-                rel="noopener"
+              <a href="tel:000000000" class="footer-link" rel="noopener"
                 >000-000-000</a
               >
               <a
                 href="mailto:giarddesign@kontakt.pl"
                 class="footer-link"
-                aria-label="mail do frimy giarddesign"
                 rel="noopener"
                 >giarddesign@kontakt.pl</a
               >
