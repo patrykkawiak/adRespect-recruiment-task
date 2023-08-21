@@ -67,23 +67,69 @@
       <div
         class="flex flex-col gap-10 p-8 max-w-[100rem] max-h-[90vh] overflow-y-scroll md:overflow-y-auto bg-white"
       >
-        <p class="text-[2.2rem] font-medium">Wiadomośc do rekrutera</p>
-        <p class="text-[1.4rem]">
-          Na wstępię chcę podziękować za możliwość udziału w kolejnym etapie
-          rekrutacji. Chciałbym podzielić się moimi spostrzeżeniami i uwagami
-          dotyczących projektu. Dodałem parę animacji i komponentów, które moim
-          zdaniem lekko ożywią strone np: subtelny parallax, własny header
-          slider, customowy scrollbar, loading screen, favicon, ciekawe hovery i
-          ten modal. Pragnę również poruszyć temat tailwinda i sass'a. Cały
-          projekt został oparty o tailwind CSS, lecz w pewnych momentach użyłem
-          sass'a aby zrobić customowe klasy (w dalszym ciągu oparte o tailwind)
-          w celu wykożystnia zasady DRY oraz do JS. Tailwinda używam codziennie
-          do pracy z Reactem, lecz w vanilla kodzie lepiej pasuje mi się z SASS
-          oraz BEM, w tym projekcie postawiłem na połącznie tych technologi z
-          dużym naciskiem na tailwinda. Zapraszam do obejrzenia projektu!
-        </p>
-        <button class="cookie-btn link primary text-[1.3rem]">
-          Przeczytałem
+        <p class="text-[2.2rem] font-bold">Wiadomośc do rekrutera</p>
+        <article class="text-[1.4rem] flex flex-col gap-4">
+          <p>
+            Na wstępię chcę podziękować za możliwość udziału w kolejnym etapie
+            rekrutacji. Chciałbym podzielić się moimi spostrzeżeniami i uwagami
+            dotyczących projektu.
+          </p>
+
+          <h4 aria-hidden="true" class="text-[1.8rem] font-medium">
+            Tailwind CSS & SASS
+          </h4>
+
+          <p>
+            Na wstępie poruszę temat Tailwind CSS i Sass'a. Cały projekt został
+            oparty o tailwind CSS, lecz w pewnych momentach użyłem sass'a aby
+            zrobić customowe klasy (w dalszym ciągu oparte o klasy tailwind) w
+            celu wykożystnia zasady DRY oraz do JS. Nie byłem do końca pewien,
+            którego podejścia oczekiwaliście. Nastawionego na same klasy
+            tailwind w pliku HTML lub klasy tailwind ze wsparciem Sassa, aby
+            uniknąc powtórzeń kodu albo samego Sassa opartego na tailwind
+            klasach. Tego nie byłem pewien więc zastosowałem oba rozwiązania.
+          </p>
+
+          <h4 aria-hidden="true" class="text-[1.8rem] font-medium">
+            Galeria zdjęć
+          </h4>
+
+          <p>
+            Posiadam jeszcze zastrzeżenia do galerii zdjęć, ponieważ używając
+            biblioteki <strong>Masnory.js</strong> nie byłem w stanie
+            wyśrodkować zdjęć między przejściem kolumn. Czasem przy odpaleniu
+            strony zdjęcia pojwiają się w bardzo dziwnych pozycjach lub jedno na
+            drugi. Z tego co czytałem to jest to dość częste, więc trzeba tylko
+            przeładować strone.
+          </p>
+
+          <h4 aria-hidden="true" class="text-[1.8rem] font-medium">Karty</h4>
+
+          <p>
+            Miałem również dylemat z sekcją <q>Oferta</q>, gdyż w zadaniu było
+            aby element był klikalny i nie do końca rozumiem co mieliście na
+            myśli, czy po prostu dać hover na element i dac cursor-pointer, czy
+            zrobić z całej karty link. Odrzuciłem te podejście z uwagi, iż w
+            karcie już znajduje się jeden link i dodałem tylko cursor-pointer.
+          </p>
+
+          <h4 aria-hidden="true" class="text-[1.8rem] font-medium">
+            Podsumowanie
+          </h4>
+
+          <p>
+            W całym projekcie lwią część pisałem sam, oprócz biblioteki AOS do
+            animacji na scrolla. Dodałem pare komponentów od siebie aby lepiej
+            zaprezentować swoją wiedzę. Dużą uwagę poświęciłem na <q>SEO</q>,
+            <q>Ułatwieniu dostępu</q> oraz optymalizacji.
+          </p>
+
+          <p class="text-[1.5rem]">Zapraszam do obejrzenia projektu!</p>
+        </article>
+        <button
+          class="cookie-btn px-8 py-4 bg-green w-max text-white text-[1.4rem] rounded-custom-28 transition-transform duration-300 hover:scale-90 "
+        >
+          Przeczytano
         </button>
       </div>
     </div>
