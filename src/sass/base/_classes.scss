@@ -28,11 +28,11 @@
 .active-loading {
   animation: closeLoading .3s linear forwards;
 }
-.info-modal {
+.cookie-modal {
   @apply flex;
 }
 
-.info-close {
+.cookie-close {
   @apply hidden;
 }
 

@@ -23,7 +23,7 @@
   @apply opacity-0 hidden fixed h-screen w-full z-[100] justify-center items-center p-[1.5rem];
   background-color: rgba(0, 0, 0, 0.586);
   &_img {
-    @apply relative min-w-[90%] h-[70vh] bg-center bg-cover;
+    @apply relative min-w-[90%] h-[70vh] bg-center bg-cover xl:min-w-[80%] xl:h-[90vh];
     .mark {
       @apply absolute right-4 top-4 text-[2rem] border-none w-[3rem] h-[3rem] text-white bg-[#000000b9] flex justify-center items-center cursor-pointer rounded-custom-28;
     }
@@ -57,12 +57,5 @@
 @keyframes showPopUp {
   to {
     opacity: 1;
-  }
-}
-@media (min-width: 1200px) {
-  .pop-up {
-    .pop-up_img {
-      @apply min-w-[80%] h-[90vh];
-    }
   }
 }
