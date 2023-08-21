@@ -57,7 +57,7 @@
 }
 
 .search {
-  @apply transition-all duration-[400];
+  transition: .4s;
 }
 .search.search-active {
   @apply w-[25rem];

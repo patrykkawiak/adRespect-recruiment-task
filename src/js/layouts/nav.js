@@ -44,6 +44,7 @@ const navModule = () => {
       search.classList.add("search-active");
       dropdownBtn.setAttribute("href", "#offer");
       navArrow.style.display = "none";
+      dropdownBtn.removeEventListener("click", handleDropDown);
     }
   };
 
