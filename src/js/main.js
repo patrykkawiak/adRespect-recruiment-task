@@ -20,7 +20,7 @@ const loadedModules = () => {
   setTimeout(() => {
     galeryModule();
     masonryModule();
-  }, 1000);
+  }, 400);
 };
 
 window.addEventListener("DOMContentLoaded", loadedModules);
