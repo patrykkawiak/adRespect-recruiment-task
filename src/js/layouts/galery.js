@@ -12,6 +12,8 @@ const galeryModule = () => {
   let imgIndex;
   let IsPopUpActive = false;
 
+
+  
   const buttonContent = (content) => {
    galleryBtn.textContent = content;
   }

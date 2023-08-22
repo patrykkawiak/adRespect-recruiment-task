@@ -10,7 +10,6 @@ import sliderModule from "./layouts/slider";
 import galeryModule from "./layouts/galery";
 
 const loadedModules = () => {
-  masonryModule();
   AOS.init();
   navModule();
   yearModule();
@@ -18,7 +17,10 @@ const loadedModules = () => {
   loadingScreenModule();
   parallaxModule();
   sliderModule();
-  galeryModule();
+  setTimeout(() => {
+    galeryModule();
+    masonryModule();
+  }, 1000);
 };
 
 window.addEventListener("DOMContentLoaded", loadedModules);
