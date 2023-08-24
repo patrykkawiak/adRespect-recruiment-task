@@ -1,81 +1,89 @@
 .bar {
-  @apply w-10 h-[2px] bg-black rounded-custom-200 transition-all duration-300;
+	@apply w-10 h-[2px] bg-black rounded-custom-200 transition-all duration-300;
 }
 
 .burger.active-burger .bar:nth-child(1) {
-  @apply opacity-0;
+	@apply opacity-0;
 }
 .burger.active-burger .bar:nth-child(2) {
-  @apply translate-y-[2px] rotate-45;
+	@apply translate-y-[2px] rotate-45;
 }
 .burger.active-burger .bar:nth-child(3) {
-  @apply -translate-y-[5px] -rotate-45;
+	@apply -translate-y-[5px] -rotate-45;
 }
 
 .nav-item {
-  @apply scale-0 w-full p-4 border-b-[1px] border-black/25 bg-[#fff] flex justify-center z-30 md:scale-100 md:w-max md:border-none md:p-0 md:animate-none;
-  a {
-    @apply p-4 w-max md:p-0 transition-colors;
-  }
-  a:hover,
-  a:active {
-    @apply text-green;
-  }
+	@apply scale-0 w-full p-4 border-b-[1px] border-black/25 bg-[#fff] flex justify-center z-30 md:scale-100 md:w-max md:border-none md:p-0 md:animate-none;
+	a {
+		@apply p-4 w-max md:p-0 transition-colors;
+	}
+	a:hover,
+	a:active {
+		@apply text-green;
+	}
 }
 
 .nav-list.active-list .nav-item {
-  animation: showNavItem 0.3s forwards;
+	animation: showNavItem 0.3s forwards;
 }
 
 .nav-list {
-  @apply hidden;
+	@apply hidden;
 }
 .nav-list.active-list {
-  @apply flex;
+	@apply flex;
 }
 
 .nav-list.active-list .nav-item:nth-child(2) {
-  animation-delay: 0.2s;
+	animation-delay: 0.2s;
 }
 .nav-list.active-list .nav-item:nth-child(3) {
-  animation-delay: 0.4s;
+	animation-delay: 0.4s;
 }
 .nav-list.active-list .nav-item:nth-child(4) {
-  animation-delay: 0.6s;
+	animation-delay: 0.6s;
 }
 .nav-list.active-list .nav-item:nth-child(5) {
-  animation-delay: 0.8s;
+	animation-delay: 0.8s;
 }
 
 @keyframes showNavItem {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
 }
 
 .search {
-  transition: .4s;
+	transition: 0.4s;
 }
 .search.search-active {
-  @apply w-[25rem];
+	@apply w-[25rem];
 }
 
 .dropdown {
-  @apply invisible opacity-0;
+	@apply invisible opacity-0 transition-all duration-300;
+}
+
+.dropdown:hover {
+	@apply visible opacity-100;
+}
+
+.dropdown-btn:hover + .dropdown {
+	@apply visible opacity-100;
 }
 
 .dropdown-active {
-  animation: dropdownShow 0.3s linear forwards;
+	animation: dropdownShow 0.3s linear forwards;
 }
 
 @keyframes dropdownShow {
-  from {
-    @apply invisible opacity-0;
-  }
-  to {
-    @apply visible opacity-100;
-  }
+	from {
+		@apply invisible opacity-0;
+	}
+	to {
+		@apply visible opacity-100;
+	}
 }
