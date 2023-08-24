@@ -1,5 +1,5 @@
 .gallery-item {
-  @apply mb-[4.3rem] cursor-zoom-in max-w-[451px];
+	@apply mb-[4.3rem] cursor-zoom-in max-w-[451px] transition-transform duration-300 hover:scale-105;
 }
 
 .gallery-ctn {
@@ -7,56 +7,55 @@
 }
 
 .gallery {
-  @apply h-max;
+	@apply h-max;
 }
 
 .gallery-ctn::before {
-  @apply content-[''] absolute bottom-0 w-full h-[1000px] z-20   opacity-100 visible transition-all duration-700;
-  background: linear-gradient(360deg, #dcc1ab 0%, rgba(214, 183, 158, 0) 100%);
+	@apply content-[''] absolute bottom-0 w-full h-[1000px] z-20   opacity-100 visible transition-all duration-700;
+	background: linear-gradient(360deg, #dcc1ab 0%, rgba(214, 183, 158, 0) 100%);
 }
 
 .gallery-active::before {
-  @apply opacity-0 invisible;
+	@apply opacity-0 invisible;
 }
 
 .pop-up {
-  @apply opacity-0 hidden fixed h-screen w-full z-[100] justify-center items-center p-[1.5rem];
-  background-color: rgba(0, 0, 0, 0.586);
-  &_img {
-    @apply relative min-w-[90%] h-[70vh] bg-center bg-cover xl:min-w-[80%] xl:h-[90vh];
-    .mark {
-      @apply absolute right-4 top-4 text-[2rem] border-none w-[3rem] h-[3rem] text-white bg-[#000000b9] flex justify-center items-center cursor-pointer rounded-custom-28;
-    }
-    .next {
-      @apply right-0 rounded-s-custom-28;
-    }
-    .prev {
-      @apply  left-0 rounded-e-custom-28;
-    }
-  }
-  .button {
-    @apply absolute bottom-1/2 translate-y-1/2 h-24 w-12 text-2xl
+	@apply opacity-0 hidden fixed h-screen w-full z-[100] justify-center items-center p-[1.5rem];
+	background-color: rgba(0, 0, 0, 0.586);
+	&_img {
+		@apply relative min-w-[90%] h-[70vh] bg-center bg-cover xl:min-w-[80%] xl:h-[90vh];
+		.mark {
+			@apply absolute right-4 top-4 text-[2rem] border-none w-[3rem] h-[3rem] text-white bg-[#000000b9] flex justify-center items-center cursor-pointer rounded-custom-28;
+		}
+		.next {
+			@apply right-0 rounded-s-custom-28;
+		}
+		.prev {
+			@apply left-0 rounded-e-custom-28;
+		}
+	}
+	.button {
+		@apply absolute bottom-1/2 translate-y-1/2 h-24 w-12 text-2xl
 	md:h-28 md:w-14 md:text-3xl lg:h-48 lg:w-24 lg:text-4xl text-gray bg-black/50 transition-colors hover:text-beige;
-  }
-
+	}
 }
 
 .show-pop-up {
-  @apply flex;
-  animation: showPopUp 0.3s forwards;
+	@apply flex;
+	animation: showPopUp 0.3s forwards;
 }
 .close-animation {
-  @apply opacity-100;
-  animation: rev 0.3s forwards;
+	@apply opacity-100;
+	animation: rev 0.3s forwards;
 }
 
 @keyframes rev {
-  to {
-    opacity: 0;
-  }
+	to {
+		opacity: 0;
+	}
 }
 @keyframes showPopUp {
-  to {
-    opacity: 1;
-  }
+	to {
+		opacity: 1;
+	}
 }
