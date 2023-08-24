@@ -68,11 +68,11 @@
 }
 
 .dropdown:hover {
-	@apply visible opacity-100;
+	@apply md:visible md:opacity-100;
 }
 
 .dropdown-btn:hover + .dropdown {
-	@apply visible opacity-100;
+	@apply md:visible md:opacity-100;
 }
 
 .dropdown-active {
